@@ -1,0 +1,18 @@
+[
+  {
+    "labelid": "1",
+    "labelname": "L1",
+    "usersid": [
+      "1",
+      "4"
+    ]
+  },
+  {
+    "labelid": "2",
+    "labelname": "L2",
+    "usersid": [
+      "4",
+      "1"
+    ]
+  }
+]

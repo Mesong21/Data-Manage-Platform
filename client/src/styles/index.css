@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  background-color: white;
+}
+.header .title {
+  font-size: 20px;
+}
+.header .settings {
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.guide {
+  background-color: white;
+}
+.data-form, .tag-form {
+  margin: 20px 20px 0;
+}
+.search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* flex-direction: row; */
+
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  padding-bottom: 40px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.search-form-name {
+  margin-right: 10px;
+}
+.search-form-name input {
+  border:  1px solid #ccc;
+  border-radius: 7px;
+  margin: 0 10px;
+  width: auto;
+  height: 30px;
+}
+.search-form-name input:focus {
+  outline: none;
+}
+.label-dropdown {
+  /* width: 300px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+.label-dropdown .select {
+  margin: 0 10px;
+}
+.search-form-time {
+  margin-right: 10px;
+}
+.search-form-time-select {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin: 0 10px;
+  width: auto;
+  height: 30px;
+}
+.search-form-time-select:focus {
+  outline: none;
+}
+.search-form-submit, .search-form-reset {
+  padding: 5px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: white;
+}
+.search-form-submit {
+  color: white;
+  background-color: #3588fd;
+}
+.search-form-submit:hover, .search-form-reset:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #3588fd;
+}
+.add-data {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+.add-data button {
+  background-color: #3588fd;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-left: auto;
+  padding: 5px;
+}
+.add-data button:hover {
+  cursor: pointer;
+}
+
+.data-view-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px; 
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  
+}
+
+.data-view-table td, .data-view-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.data-view-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-view-table tr:hover {
+  background-color: #ddd;
+}
+
+.data-view-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ccc;
+  color: black;
+}
+.label-span {
+  margin: 2px;
+  padding: 1px 5px;
+  background-color: #c7ff67;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.label-span:hover {
+  cursor: pointer;
+  /* color: white; */
+}
+.action-data {
+  display: flex;
+  flex-direction: row;
+}
+.edit-data {
+  margin-right: 5px;
+}
+.edit-data button, .delete-data button {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 5px;
+}
+.edit-data button:hover, .delete-data button:hover {
+  cursor: pointer;
+  background-color: #3588fd;
+  color: white;
+}
+
+
+.add-tag {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+.add-tag button {
+  background-color: #3588fd;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-left: auto;
+  padding: 5px;
+}
+.add-tag button:hover {
+  cursor: pointer;
+}
+
+.tag-view-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px; 
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+.tag-view-table td, .tag-view-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.tag-view-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.tag-view-table tr:hover {
+  background-color: #ddd;
+}
+.tag-view-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ccc;
+  color: black;
+}
+
+.action-tag {
+  display: flex;
+  flex-direction: row;
+}
+.edit-tag {
+  margin-right: 5px;
+}
+.edit-tag button, .delete-tag button {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 5px;
+}
+.edit-tag button:hover, .delete-tag button:hover {
+  cursor: pointer;
+  background-color: #3588fd;
+  color: white;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pagination button {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+}
+.pagination button:hover {
+  cursor: pointer;
+  background-color: #3588fd;
+  color: white;
+}
+.pagination select {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+}
+.pagination select:hover {
+  cursor: pointer;
+}
+.pagination select:focus {
+  cursor: pointer;
+  outline: none;
+}
+.setting-submenu-language {
+  direction: rtl;
+}
